@@ -1,0 +1,41 @@
+/* importing fonts */
+@font-face{
+   src: url("../../fonts/Righteous-Regular.ttf");
+   font-family: Righteous;
+}
+@font-face{
+   src: url("../../fonts/Montserrat-Regular.ttf"); 
+   font-family: Montserrat;
+}
+@font-face{
+   src: url("../../fonts/Roboto-Medium.ttf"); 
+   font-family: Roboto;
+}
+
+
+.page {
+    position: absolute;
+    left: 0;
+    right: 0;
+    background-color: #FFFCFB;
+}
+.fade-appear,
+.fade-enter {
+    opacity: 0;
+    z-index: 1;
+}
+.fade-appear-active,
+.fade-enter.fade-enter-active {
+    opacity: 1;
+    transition: opacity 1s ease-in 650ms;
+}
+
+.fade-exit {
+    opacity: 1;
+}
+
+.fade-exit.fade-exit-active {
+    opacity: 0;
+    transition: opacity 1s ease-out;
+}
+

@@ -1,0 +1,7 @@
+export const Fetch_Notes = "FETCH_NOTES"
+export const Add_Notes = "ADD_NOTES"
+export const Remove_Notes = "REMOVE_NOTES"
+export const Edit_Notes = "EDIT_NOTES"
+export const Clear_Notes = "CLEAR_NOTES"
+export const Signed_in = "SIGNED_IN"
+export const Signed_out = "SIGNED_OUT"
