@@ -62,7 +62,6 @@ class NotesPage extends Component {
     removeNotes = (noteID, numbID) => {
         // Remove one note in Redux
         const uid = this.state.userID
-        console.log(noteID);
         this.props.firebase.oneNoteUser(uid, noteID).remove();
         this.props.RemoveNote(numbID)
     };
@@ -70,7 +69,6 @@ class NotesPage extends Component {
     editNotes = (newText, noteID, restNotes, numbID) => {
         // Edit note  in Redux
         const uid = this.state.userID
-        console.log(noteID);
         const updatedNotes = this.state.notes.map((note, numb) => {
             if (numb === numbID) {
                 return { ...note, text: newText, editedDate: Date.now() }
