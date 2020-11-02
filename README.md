@@ -1,6 +1,6 @@
 # Notes List App
 
-This is a small and simple Project from Globebuzzer build with React and Redux. This project is also hosted here [Note List App]("http://mo-sal-ah-note-list.surge.sh/").
+This is a small and simple Project from Globebuzzer build with React and Redux. This project is also hosted here [Note List App](http://mo-sal-ah-note-list.surge.sh/).
 
 ## Description 
 
