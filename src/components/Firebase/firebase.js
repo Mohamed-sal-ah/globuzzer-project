@@ -44,11 +44,6 @@ class Firebase {
           .once('value')
           .then(snapshot => {
             const dbUser = snapshot.val();
-            // default empty roles
-            // if (!dbUser.roles) {
-            //   dbUser.roles = {};
-            // }
-            // merge auth and db user
             authUser = {
               uid: authUser.uid,
               email: authUser.email,
@@ -70,25 +65,7 @@ class Firebase {
 
   oneNoteUser = (uid, noteID) => this.db.ref(`users/${uid}/notes/${noteID}`)
 
-  // *** Storage ***
-  //allow read, write: if request.auth != null; auth user storage
-  //  allow read, write; non-user storage
 
 }
 
 export default Firebase
-/*
-<!-- The core Firebase JS SDK is always required and must be listed first -->
-<script src="https://www.gstatic.com/firebasejs/7.8.2/firebase-app.js"></script>
-
-<!-- TODO: Add SDKs for Firebase products that you want to use
- https://firebase.google.com/docs/web/setup#available-libraries -->
-<script src="https://www.gstatic.com/firebasejs/7.8.2/firebase-analytics.js"></script>
-
-<script>
-// Your web app's Firebase configuration
-
-// Initialize Firebase
-firebase.initializeApp(firebaseConfig);
-firebase.analytics();
-</script> */
